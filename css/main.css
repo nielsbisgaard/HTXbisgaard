@@ -1,0 +1,30 @@
+p {
+    color:red;
+    font-size: 69px;
+}
+h2 {
+    color:rgb(208, 79, 79);
+    font-size: 30px;
+}
+
+.mydiv1{
+    color:rgb(0,0,0);
+    font-family:bold;
+}
+.mydiv2{
+    color:blue;
+    font-size: 10px;
+    font-family:'comic sans ms';
+}
+#pic1 {
+    width: 300px;
+    height: 200px;
+}
+#pic2 {
+    width: 600px;
+    height: 400px;
+}
+#pic3 {
+    width: 900px;
+    height: 600px;
+}
