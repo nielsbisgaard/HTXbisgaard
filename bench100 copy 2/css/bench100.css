@@ -1,0 +1,135 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ececec;
+}
+
+#grid-container {
+    top:0px;
+    left:auto;
+    display: grid;
+    grid-template-columns: repeat(15, 40px); /* 12 columns */
+    grid-template-rows: repeat(1, 150px);   /* 1 rows with taller height */
+    gap: 10px;                              /* Space between boxes */
+    position: relative; 
+    padding: 10px;
+}
+
+#grid-container2 {
+
+    display: grid;
+    grid-template-columns: repeat(4, 40px); /* 12 columns */
+    grid-template-rows: repeat(2, 150px);   /* 1 rows with taller height */
+    gap: 10px;                              /* Space between boxes */
+    position: relative; 
+    border: 2px solid rgb(0, 0, 0);                /* Optional: border around the grid */
+    padding: 10px;
+}
+
+.square {
+    width: 40px;
+    height: 150px;
+    background-color: #e8e8e8;
+    border: 2px solid rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.spacer {
+    width: 40px;
+    height: 150px;
+    color: #ececec;
+}
+
+.spacer-large {
+    width: 250px;
+    height: 300px;
+    color: #ececec;
+}
+
+.square:hover {
+    background-color: #ddd;
+}
+
+.weight {
+    width: 40px;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Allows it to move */
+    top: 0;
+    left: 0;
+    transform: translate(2px, 2px); /* Align to the center of squares */
+    cursor: pointer;
+    transition: top 0.02s ease, left 0.2s ease; /* Smooth movement */
+    z-index: 3;
+}
+
+#baenk {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    left: 44%;
+    width: 230px;
+    height: auto;            /* Maintain aspect ratio */
+}
+#baenkneger {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 48%;
+    left: 35%;
+    width: 400px;
+    height: auto;            /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.stang {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 49%;
+    left: -7%;
+    z-index: 2;
+}
+
+#text {
+    font-size: 18px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+#text2 {
+    font-size: 18px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+#text3 {
+    font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+#text4 {
+    font-size: 18px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+.manualtext {
+    font-size: 14px;
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 200px;
+}

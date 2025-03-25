@@ -1,0 +1,44 @@
+.nav1{
+    font-size: large;
+}
+.h1{
+    color:black;
+}
+.h2{
+    color:black;
+}
+.p1{
+    color:black;
+}
+.p2{
+    color:black;
+}
+#img1{
+    width: 100%;
+}
+.div1{
+    height:200px;
+    width: 300px;
+}
+a:link {
+    color:green;
+}
+a:visited {
+    color:red;
+}
+a:hover {
+    color:blue;
+}
+a:active {
+    color:yellow;
+}
+.button {
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

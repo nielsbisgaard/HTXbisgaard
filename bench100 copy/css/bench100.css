@@ -1,0 +1,95 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ececec;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 40px); /* 12 columns */
+    grid-template-rows: repeat(1, 150px);   /* 1 rows with taller height */
+    gap: 10px;                              /* Space between boxes */
+    position: relative; 
+    border: 2px solid rgb(0, 0, 0);                /* Optional: border around the grid */
+    padding: 10px;
+}
+
+#grid-container2 {
+
+    display: grid;
+    grid-template-columns: repeat(4, 40px); /* 12 columns */
+    grid-template-rows: repeat(2, 150px);   /* 1 rows with taller height */
+    gap: 10px;                              /* Space between boxes */
+    position: relative; 
+    border: 2px solid rgb(0, 0, 0);                /* Optional: border around the grid */
+    padding: 10px;
+}
+
+.square {
+    width: 40px;
+    height: 150px;
+    background-color: #ccc;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.spacer {
+    width: 40px;
+    height: 150px;
+    color: #ececec;
+}
+
+.spacer-large {
+    width: 250px;
+    height: 300px;
+    color: #ececec;
+}
+
+.square:hover {
+    background-color: #ddd;
+}
+
+.vaegt {
+    width: 40px;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Allows it to move */
+    top: 0;
+    left: 0;
+    transform: translate(2px, 2px); /* Align to the center of squares */
+    cursor: pointer;
+    transition: top 0.3s ease, left 0.3s ease; /* Smooth movement */
+}
+
+
+#text {
+    font-size: 18px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+#text2 {
+    font-size: 18px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+#text3 {
+    font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+#text4 {
+    font-size: 18px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
