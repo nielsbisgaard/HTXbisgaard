@@ -1,0 +1,192 @@
+/* Reklame2 fast i højre side */
+#reklame2 {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 180px;
+    z-index: 1000;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    border-radius: 12px 0 0 12px;
+}
+/* Kæmpe køb-knap styling */
+.koeb-knap {
+    display: block;
+    margin: 100px auto 0 auto;
+    padding: 40px 100px;
+    font-size: 48px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(34,139,34,0.25), 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.koeb-knap:hover {
+    transform: scale(1.07);
+    background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+    box-shadow: 0 12px 40px rgba(34,139,34,0.35), 0 4px 16px rgba(0,0,0,0.15);
+}
+/* Skygge-overlay til billede1 som baggrund */
+.Forside {
+    position: relative;
+}
+.Forside::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.8) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gallery-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: 40px auto;
+    overflow: hidden;
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: left 0.7s cubic-bezier(0.77,0,0.18,1), opacity 0.4s;
+    z-index: 1;
+}
+
+.gallery-slide.active {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+}
+
+.gallery-slide.prev {
+    left: -100%;
+    opacity: 0;
+    z-index: 1;
+}
+.Guides {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 80px 0 40px 0;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', 'Comic Sans';
+}
+
+.guide-box {
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 32px 20px;
+    flex: 1 1 0;
+    min-width: 220px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.guide-box h {
+    margin-top: 0;
+    color: #228B22;
+}
+.guide-box:hover {
+    box-shadow: 0 8px 24px rgba(34,139,34,0.2);
+    transform: translateY(-6px);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+/* Klassisk grøn navigationsbar */
+.header {
+    background: #228B22;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Comic Sans MS', 'Comic Sans';
+    gap: 32px;
+}
+
+
+#billede1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+#regler {
+    width: 100%;
+}
+
+#strategier {
+    width: 100%;
+}
+#begynder {
+    width: 100%;
+}
+.sej-tekst {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 109px;
+    font-family: 'Comic Sans MS', 'Comic Sans';
+    color: #000000;
+    text-align: center;
+}
+.sej-tekst2 {
+    position: absolute;
+    top: 30%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 109px;
+    font-family: 'Comic Sans MS', 'Comic Sans';
+    color: #ffffff;
+    text-align: center;
+}
+#reklame1 {
+    width: 30%;
+    transform: translate(-50%, -50%);
+    left: 100px;
+    top: 200px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

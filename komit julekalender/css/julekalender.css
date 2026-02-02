@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    position: center;
+}
+
+.kalender {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    max-width: 900px;
+}
+
+.dag {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #c41e3a 0%, #b01830 100%);
+    border: 3px solid #8b0000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.dag:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dag.aabnet {
+    background-size: cover;
+    background-position: center;
+    border-color: #fcf800;
+    animation: openDoor 0.6s ease forwards;
+}
+
+.dag.julemand1 {
+    background: url('../images/julemanden.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.dag.julemand2 {
+    background: url('../images/julemanden2.jpg') no-repeat center center;
+    background-size: cover;
+}
